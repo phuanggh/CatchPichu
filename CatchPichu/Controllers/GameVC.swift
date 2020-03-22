@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class GameVC: UIViewController {
 
     
     @IBOutlet var pokemonButtonOutlet: [UIButton]!
@@ -23,6 +24,15 @@ class ViewController: UIViewController {
     let raichuArray = Array(repeating: "raichu", count: 1)
     var gameTime = 10
     var totalScroe = 0
+    
+    let player = AVPlayer()
+    
+    
+    @IBAction func StartButtonPressed(_ sender: UIButton) {
+        playMusic()
+        gameStart()
+        sender.isHidden = true
+    }
     
     
     @IBAction func pokemonButtonPressed(_ sender: UIButton) {
@@ -53,18 +63,23 @@ class ViewController: UIViewController {
 
     }
     
+    func playMusic(){
+        let fileUrl = Bundle.main.url(forResource: "BackgroundMusic", withExtension: "mp3")!
+        let playerItem = AVPlayerItem(url: fileUrl)
+        player.replaceCurrentItem(with: playerItem)
+        player.play()
+        
+    }
     
     
     
     //使用者start遊戲後的動作，每1.5秒show pokemon
     func gameStart() {
-//        pokemonButtonOutlet[0].imageView?.image = UIImage(named: "pichu")
-        
-//        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(showPokemon), userInfo: nil, repeats: true)
         
         // Timer: game countdown
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             self.gameTime -= 1
+            self.gameTimeLabel.text = String(self.gameTime)
             if self.gameTime == 0 {
                 timer.invalidate()
                 print("time's up")
@@ -153,8 +168,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        gameStart()
+        
+        
+        
 
     }
 
