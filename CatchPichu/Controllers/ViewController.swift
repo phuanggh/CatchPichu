@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet var pokemonView: [UIImageView]!
-    
     @IBOutlet var pokemonButtonOutlet: [UIButton]!
     
     
@@ -20,13 +18,6 @@ class ViewController: UIViewController {
     let pikachuArray = Array(repeating: "pikachu", count: 3)
     let raichuArray = Array(repeating: "raichu", count: 2)
     var gameTime = 10
-    
-    // test
-//    func testFunc(){
-//        for i in 0 ..< pokemonButtonOutlet.count {
-//            pokemonButtonOutlet[i].setImage(UIImage(named: "pichu"), for: .normal)
-//        }
-//    }
     
     //使用者start遊戲後的動作，每1.5秒show pokemon
     func gameStart() {
@@ -57,16 +48,6 @@ class ViewController: UIViewController {
     //顯示pokemon的圖片
     @objc func showPokemon(){
         
-        //imageView: 找出所有空的imageView
-//        var emptyView = [UIImageView]()
-//        for i in 1...pokemonView!.count {
-//            if pokemonView[i - 1].image == nil {
-//                emptyView.append(pokemonView[i-1])
-//
-////                print(pokemonView[i-1].tag)
-//            }
-//        }
-        
         //button: 找出所有空的button
         var emptyButtonArray = [UIButton]()
         for i in 1...pokemonButtonOutlet.count {
@@ -80,35 +61,6 @@ class ViewController: UIViewController {
 
         //每次有幾個imageView要出現pokemon
         let numberToAdd = Int.random(in: 1...3)
-
-        //imageView: 空的imageView要隨機出現pokemon
-//        if emptyView.count > 7 {
-//            emptyView.shuffle()
-//            for i in 0 ..< numberToAdd {
-//
-//                //每次隨機出現的pokemon
-//                let randomPokemon = pokemonArray.randomElement()
-//                emptyView[i].image = UIImage(named: "\(randomPokemon ?? "pichu")")
-//
-//
-//                //每種pokemon出現的時間
-//                var pokemonAppearTime = 3
-//                switch randomPokemon {
-//                case "pikachu":
-//                    pokemonAppearTime = 2
-//                case "raichu":
-//                    pokemonAppearTime = 1
-//                default:
-//                    pokemonAppearTime = 3
-//                }
-//
-//                //只讓該次出現的pokemon消失
-//                Timer.scheduledTimer(withTimeInterval: TimeInterval(pokemonAppearTime), repeats: false) { (timer) in
-//                    emptyView[i].image = nil
-//                }
-//            }
-//        }
-        
         
         //button: 空的button要隨機出現pokemon
         if emptyButtonArray.count > 7 {
@@ -165,9 +117,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        if (view.viewWithTag(4) as! UIImageView).image == nil {
-//            print("nil")
-//        }
         gameStart()
 
     }
