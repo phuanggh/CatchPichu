@@ -16,8 +16,6 @@
 		7AF7EA952425FABB003C3708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7EA932425FABB003C3708 /* Main.storyboard */; };
 		7AF7EA972425FABD003C3708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7EA962425FABD003C3708 /* Assets.xcassets */; };
 		7AF7EA9A2425FABD003C3708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7EA982425FABD003C3708 /* LaunchScreen.storyboard */; };
-		7AF7EAA224264FB1003C3708 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7EAA124264FB1003C3708 /* GameBrain.swift */; };
-		7AF7EAA524264FD4003C3708 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7EAA424264FD4003C3708 /* ItemType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +30,6 @@
 		7AF7EA962425FABD003C3708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF7EA992425FABD003C3708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AF7EA9B2425FABD003C3708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AF7EAA124264FB1003C3708 /* GameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
-		7AF7EAA424264FD4003C3708 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +78,6 @@
 		7AF7EAA324264FB4003C3708 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7AF7EAA424264FD4003C3708 /* ItemType.swift */,
-				7AF7EAA124264FB1003C3708 /* GameBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,9 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ACB93212427860A00C982D7 /* LeaderboardVC.swift in Sources */,
-				7AF7EAA224264FB1003C3708 /* GameBrain.swift in Sources */,
 				7AF7EA922425FABB003C3708 /* GameVC.swift in Sources */,
-				7AF7EAA524264FD4003C3708 /* ItemType.swift in Sources */,
 				7AF7EA8E2425FABB003C3708 /* AppDelegate.swift in Sources */,
 				7AF7EA902425FABB003C3708 /* SceneDelegate.swift in Sources */,
 				7ACB932324279F8B00C982D7 /* MainVC.swift in Sources */,
