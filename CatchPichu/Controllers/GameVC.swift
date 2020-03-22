@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 
 class GameVC: UIViewController {
-
     
     @IBOutlet var pokemonButtonOutlet: [UIButton]!
     
