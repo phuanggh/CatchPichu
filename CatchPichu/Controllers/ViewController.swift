@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     var gameTime = 10
     
     // test
-    func testFunc(){
-        for i in 0 ..< pokemonButtonOutlet.count {
-            pokemonButtonOutlet[i].setImage(UIImage(named: "pichu"), for: .normal)
-        }
-    }
+//    func testFunc(){
+//        for i in 0 ..< pokemonButtonOutlet.count {
+//            pokemonButtonOutlet[i].setImage(UIImage(named: "pichu"), for: .normal)
+//        }
+//    }
     
     //使用者start遊戲後的動作，每1.5秒show pokemon
     func gameStart() {
@@ -57,13 +57,21 @@ class ViewController: UIViewController {
     //顯示pokemon的圖片
     @objc func showPokemon(){
         
-        //找出所有空的imageView
-        var emptyView = [UIImageView]()
-        for i in 1...pokemonView!.count {
-            if pokemonView[i - 1].image == nil {
-                emptyView.append(pokemonView[i-1])
-                
-//                print(pokemonView[i-1].tag)
+        //imageView: 找出所有空的imageView
+//        var emptyView = [UIImageView]()
+//        for i in 1...pokemonView!.count {
+//            if pokemonView[i - 1].image == nil {
+//                emptyView.append(pokemonView[i-1])
+//
+////                print(pokemonView[i-1].tag)
+//            }
+//        }
+        
+        //button: 找出所有空的button
+        var emptyButtonArray = [UIButton]()
+        for i in 1...pokemonButtonOutlet.count {
+            if pokemonButtonOutlet[i - 1].currentImage == nil {
+                emptyButtonArray.append(pokemonButtonOutlet[i - 1])
             }
         }
         
@@ -73,16 +81,44 @@ class ViewController: UIViewController {
         //每次有幾個imageView要出現pokemon
         let numberToAdd = Int.random(in: 1...3)
 
-        //空的imageView要隨機出現pokemon
-        if emptyView.count > 7 {
-            emptyView.shuffle()
-            for i in 0 ..< numberToAdd {
+        //imageView: 空的imageView要隨機出現pokemon
+//        if emptyView.count > 7 {
+//            emptyView.shuffle()
+//            for i in 0 ..< numberToAdd {
+//
+//                //每次隨機出現的pokemon
+//                let randomPokemon = pokemonArray.randomElement()
+//                emptyView[i].image = UIImage(named: "\(randomPokemon ?? "pichu")")
+//
+//
+//                //每種pokemon出現的時間
+//                var pokemonAppearTime = 3
+//                switch randomPokemon {
+//                case "pikachu":
+//                    pokemonAppearTime = 2
+//                case "raichu":
+//                    pokemonAppearTime = 1
+//                default:
+//                    pokemonAppearTime = 3
+//                }
+//
+//                //只讓該次出現的pokemon消失
+//                Timer.scheduledTimer(withTimeInterval: TimeInterval(pokemonAppearTime), repeats: false) { (timer) in
+//                    emptyView[i].image = nil
+//                }
+//            }
+//        }
+        
+        
+        //button: 空的button要隨機出現pokemon
+        if emptyButtonArray.count > 7 {
+            emptyButtonArray.shuffle()
+            for i in 0..<numberToAdd {
                 
                 //每次隨機出現的pokemon
                 let randomPokemon = pokemonArray.randomElement()
-                emptyView[i].image = UIImage(named: "\(randomPokemon ?? "pichu")")
-                
-                
+                emptyButtonArray[i].setImage(UIImage(named: "\(randomPokemon ?? "pichu")"), for: .normal)
+
                 //每種pokemon出現的時間
                 var pokemonAppearTime = 3
                 switch randomPokemon {
@@ -96,9 +132,11 @@ class ViewController: UIViewController {
                 
                 //只讓該次出現的pokemon消失
                 Timer.scheduledTimer(withTimeInterval: TimeInterval(pokemonAppearTime), repeats: false) { (timer) in
-                    emptyView[i].image = nil
+                    emptyButtonArray[i].setImage(nil, for: .normal)
                 }
+                
             }
+            
         }
         
 //        pokemonDidAppear()
