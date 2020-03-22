@@ -13,14 +13,44 @@ class ViewController: UIViewController {
     
     @IBOutlet var pokemonButtonOutlet: [UIButton]!
     
-    let pichuArray = Array(repeating: "pichu", count: 5)
-    let pikachuArray = Array(repeating: "pikachu", count: 3)
-    let raichuArray = Array(repeating: "raichu", count: 2)
+    @IBOutlet weak var gameTimeLabel: UILabel!
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    
+    let pichuArray = Array(repeating: "pichu", count: 6)
+    let pikachuArray = Array(repeating: "pikachu", count: 2)
+    let raichuArray = Array(repeating: "raichu", count: 1)
     var gameTime = 10
+    var totalScroe = 0
     
     
     @IBAction func pokemonButtonPressed(_ sender: UIButton) {
-        print(sender.tag)
+        
+        let pokemonHit = pokemonButtonOutlet[sender.tag - 1]
+        
+        if pokemonHit.currentImage != nil {
+
+            // Set the score
+            switch pokemonHit.titleLabel?.text {
+            case "pikachu":
+                totalScroe += 3
+            case "raichu":
+                totalScroe += 5
+            default:
+                totalScroe += 1
+            }
+            
+            scoreLabel.text = "\(totalScroe)"
+            
+            // Let the image and title disappear after hit
+            pokemonHit.setImage(nil, for: .normal)
+            pokemonHit.setTitle(nil, for: .normal)
+            
+
+        }
+        
+
     }
     
     
@@ -55,7 +85,7 @@ class ViewController: UIViewController {
                 
                 
                 
-                print("stop showing pokemon")
+                print("stop showing pokemon. Your total score is \(self.totalScroe)")
             }
             
         }
@@ -85,7 +115,13 @@ class ViewController: UIViewController {
                 
                 //每次隨機出現的pokemon
                 let randomPokemon = pokemonArray.randomElement()
+                
+                // set the random pokemon image
                 emptyButtonArray[i].setImage(UIImage(named: "\(randomPokemon ?? "pichu")"), for: .normal)
+                
+                // set the random pokemon title
+                emptyButtonArray[i].setTitle(randomPokemon ?? "pichu", for: .normal)
+//                print(emptyButtonArray[i].titleLabel?.text ?? "cannot get button title")
 
                 //每種pokemon出現的時間
                 var pokemonAppearTime = 3
@@ -100,35 +136,20 @@ class ViewController: UIViewController {
                 
                 //只讓該次出現的pokemon消失
                 Timer.scheduledTimer(withTimeInterval: TimeInterval(pokemonAppearTime), repeats: false) { (timer) in
+                    
+                    // let the pokemon image disappear
                     emptyButtonArray[i].setImage(nil, for: .normal)
+                    
+                    // let the pokemon title disappear
+                    emptyButtonArray[i].setTitle(nil, for: .normal)
                 }
                 
             }
             
         }
         
-//        pokemonDidAppear()
     }
     
-    
-//    //神奇寶貝顯示後的動作
-//    func pokemonDidAppear(){
-//        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(hidePokemon), userInfo: nil, repeats: false)
-//
-//        //Timer依照shownPokeonAppearTime來決定幾秒後叫hidePokemon()
-//            // Image.isShown = false
-//
-//
-//    }
-//
-//    //讓神奇寶貝消失
-//    @objc func hidePokemon(){
-//        for i in 0 ..< pokemonView!.count{
-//            pokemonView[i].image = nil
-//        }
-//
-//    }
-//
     
     override func viewDidLoad() {
         super.viewDidLoad()

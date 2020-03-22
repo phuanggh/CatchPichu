@@ -83,6 +83,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC6-oG-i4o" userLabel="Button1">
                                 <rect key="frame" x="22" y="167" width="105" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bcv-B5-iSQ"/>
                                 </connections>
@@ -90,6 +93,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tce-Iz-Y28" userLabel="Button2">
                                 <rect key="frame" x="168" y="167" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgV-Mo-hY6"/>
                                 </connections>
@@ -97,6 +103,9 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-yM-4Cc" userLabel="Button3">
                                 <rect key="frame" x="289" y="167" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZB-8B-BjN"/>
                                 </connections>
@@ -104,6 +113,9 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj9-UQ-nRg" userLabel="Button4">
                                 <rect key="frame" x="24" y="302" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQw-pm-9xM"/>
                                 </connections>
@@ -111,6 +123,9 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv2-HF-5Er" userLabel="Button5">
                                 <rect key="frame" x="164" y="302" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTS-UJ-EFl"/>
                                 </connections>
@@ -118,6 +133,9 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-zi-P7a" userLabel="Button6">
                                 <rect key="frame" x="285" y="302" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGH-bA-pcl"/>
                                 </connections>
@@ -125,6 +143,9 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhR-lT-5ht" userLabel="Button7">
                                 <rect key="frame" x="34" y="435" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEL-W2-zh4"/>
                                 </connections>
@@ -132,6 +153,9 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-em-cNf" userLabel="Button8">
                                 <rect key="frame" x="173" y="435" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U55-rB-8nN"/>
                                 </connections>
@@ -139,6 +163,9 @@
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1x-tb-5K5" userLabel="Button9">
                                 <rect key="frame" x="294" y="435" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t2O-ve-egp"/>
                                 </connections>
@@ -146,6 +173,9 @@
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9v-uQ-rMe" userLabel="Button10">
                                 <rect key="frame" x="34" y="571" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWX-W2-8Vv"/>
                                 </connections>
@@ -153,6 +183,9 @@
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1A-5J-pDT" userLabel="Button11">
                                 <rect key="frame" x="174" y="571" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrw-El-5wT"/>
                                 </connections>
@@ -160,15 +193,42 @@
                             <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-yx-wdI" userLabel="Button12">
                                 <rect key="frame" x="295" y="571" width="105" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pokemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxt-95-LjK"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="6Ob-R4-wxQ">
+                                <rect key="frame" x="335" y="64" width="55" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0y-XU-f0g">
+                                <rect key="frame" x="259" y="70" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catch_net" translatesAutoresizingMaskIntoConstraints="NO" id="86v-vb-txb">
+                                <rect key="frame" x="34" y="70" width="55" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-iY-hOc">
+                                <rect key="frame" x="83" y="70" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92881518602371216" green="0.89294034242630005" blue="0.65389025211334229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="gameTimeLabel" destination="I0y-XU-f0g" id="xQ7-5A-6vp"/>
+                        <outlet property="scoreLabel" destination="gDc-iY-hOc" id="IOL-GV-Z6Q"/>
                         <outletCollection property="pokemonButtonOutlet" destination="JC6-oG-i4o" collectionClass="NSMutableArray" id="Rch-KQ-Hhb"/>
                         <outletCollection property="pokemonButtonOutlet" destination="tce-Iz-Y28" collectionClass="NSMutableArray" id="Tum-Ml-NAY"/>
                         <outletCollection property="pokemonButtonOutlet" destination="ehb-yM-4Cc" collectionClass="NSMutableArray" id="Alz-xe-Hqy"/>
@@ -189,6 +249,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="catch_net" width="512" height="512"/>
+        <image name="clock" width="512" height="512"/>
         <image name="ground_hole" width="7721" height="2850"/>
         <image name="hiclipart.com3" width="1440" height="810"/>
     </resources>
