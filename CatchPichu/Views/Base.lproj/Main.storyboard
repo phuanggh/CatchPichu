@@ -128,6 +128,55 @@
                                 <rect key="frame" x="297" y="571" width="117" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tce-Iz-Y28" userLabel="Button2">
+                                <rect key="frame" x="168" y="167" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-yM-4Cc" userLabel="Button3">
+                                <rect key="frame" x="289" y="167" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj9-UQ-nRg" userLabel="Button4">
+                                <rect key="frame" x="24" y="302" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv2-HF-5Er" userLabel="Button5">
+                                <rect key="frame" x="164" y="302" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-zi-P7a" userLabel="Button6">
+                                <rect key="frame" x="285" y="302" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhR-lT-5ht" userLabel="Button7">
+                                <rect key="frame" x="34" y="435" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-em-cNf" userLabel="Button8">
+                                <rect key="frame" x="173" y="435" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1x-tb-5K5" userLabel="Button9">
+                                <rect key="frame" x="294" y="435" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9v-uQ-rMe" userLabel="Button10">
+                                <rect key="frame" x="34" y="571" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1A-5J-pDT" userLabel="Button11">
+                                <rect key="frame" x="174" y="571" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-yx-wdI" userLabel="Button12">
+                                <rect key="frame" x="295" y="571" width="105" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC6-oG-i4o" userLabel="Button1">
+                                <rect key="frame" x="22" y="167" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="pikachu"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92881518602371216" green="0.89294034242630005" blue="0.65389025211334229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -145,6 +194,18 @@
                         <outletCollection property="pokemonView" destination="GW7-fk-fPB" collectionClass="NSMutableArray" id="0uK-QH-GX8"/>
                         <outletCollection property="pokemonView" destination="xB9-Rp-EG5" collectionClass="NSMutableArray" id="My3-pb-qMR"/>
                         <outletCollection property="pokemonView" destination="PEa-pf-qXI" collectionClass="NSMutableArray" id="ItZ-X7-0e7"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="JC6-oG-i4o" collectionClass="NSMutableArray" id="Rch-KQ-Hhb"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="tce-Iz-Y28" collectionClass="NSMutableArray" id="Tum-Ml-NAY"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="ehb-yM-4Cc" collectionClass="NSMutableArray" id="Alz-xe-Hqy"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="Dj9-UQ-nRg" collectionClass="NSMutableArray" id="5Wv-hN-i4r"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="vv2-HF-5Er" collectionClass="NSMutableArray" id="cxC-cR-w8f"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="aiQ-zi-P7a" collectionClass="NSMutableArray" id="dAE-dY-P3I"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="WhR-lT-5ht" collectionClass="NSMutableArray" id="e9d-Fg-hjh"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="eT7-em-cNf" collectionClass="NSMutableArray" id="ByT-Dg-XjT"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="z1x-tb-5K5" collectionClass="NSMutableArray" id="cRU-C0-ttf"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="E9v-uQ-rMe" collectionClass="NSMutableArray" id="sxL-NW-qbA"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="x1A-5J-pDT" collectionClass="NSMutableArray" id="2X6-SI-jaR"/>
+                        <outletCollection property="pokemonButtonOutlet" destination="FBd-yx-wdI" collectionClass="NSMutableArray" id="LFv-Ss-dhM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,5 +216,6 @@
     <resources>
         <image name="ground_hole" width="7721" height="2850"/>
         <image name="hiclipart.com3" width="1440" height="810"/>
+        <image name="pikachu" width="1000" height="1000"/>
     </resources>
 </document>

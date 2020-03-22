@@ -13,14 +13,45 @@ class ViewController: UIViewController {
     
     @IBOutlet var pokemonView: [UIImageView]!
     
+    @IBOutlet var pokemonButtonOutlet: [UIButton]!
+    
+    
     let pichuArray = Array(repeating: "pichu", count: 5)
     let pikachuArray = Array(repeating: "pikachu", count: 3)
     let raichuArray = Array(repeating: "raichu", count: 2)
+    var gameTime = 10
     
+    // test
+    func testFunc(){
+        for i in 0 ..< pokemonButtonOutlet.count {
+            pokemonButtonOutlet[i].setImage(UIImage(named: "pichu"), for: .normal)
+        }
+    }
     
     //使用者start遊戲後的動作，每1.5秒show pokemon
     func gameStart() {
-        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(showPokemon), userInfo: nil, repeats: true)
+//        pokemonButtonOutlet[0].imageView?.image = UIImage(named: "pichu")
+        
+//        Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(showPokemon), userInfo: nil, repeats: true)
+        
+        // Timer: game countdown
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            self.gameTime -= 1
+            if self.gameTime == 0 {
+                timer.invalidate()
+                print("time's up")
+            }
+        }
+        
+        // Timer: showing pokemon until time's up
+        Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true) { (timer) in
+            self.showPokemon()
+            if self.gameTime == 0 {
+                timer.invalidate()
+                print("stop showing pokemon")
+            }
+            
+        }
     }
     
     //顯示pokemon的圖片
@@ -32,7 +63,7 @@ class ViewController: UIViewController {
             if pokemonView[i - 1].image == nil {
                 emptyView.append(pokemonView[i-1])
                 
-                print(pokemonView[i-1].tag)
+//                print(pokemonView[i-1].tag)
             }
         }
         
