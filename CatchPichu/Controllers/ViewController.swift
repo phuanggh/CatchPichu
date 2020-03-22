@@ -13,11 +13,18 @@ class ViewController: UIViewController {
     
     @IBOutlet var pokemonButtonOutlet: [UIButton]!
     
-    
     let pichuArray = Array(repeating: "pichu", count: 5)
     let pikachuArray = Array(repeating: "pikachu", count: 3)
     let raichuArray = Array(repeating: "raichu", count: 2)
     var gameTime = 10
+    
+    
+    @IBAction func pokemonButtonPressed(_ sender: UIButton) {
+        print(sender.tag)
+    }
+    
+    
+    
     
     //使用者start遊戲後的動作，每1.5秒show pokemon
     func gameStart() {
@@ -39,6 +46,15 @@ class ViewController: UIViewController {
             self.showPokemon()
             if self.gameTime == 0 {
                 timer.invalidate()
+                
+                //all pokemon disappear when time's up
+                for i in 0..<self.pokemonButtonOutlet.count {
+                    self.pokemonButtonOutlet[i].setImage(nil, for: .normal)
+                    self.pokemonButtonOutlet[i].isEnabled = false
+                }
+                
+                
+                
                 print("stop showing pokemon")
             }
             
