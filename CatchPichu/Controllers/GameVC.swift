@@ -57,7 +57,6 @@ class GameVC: UIViewController {
             pokemonHit.setImage(nil, for: .normal)
             pokemonHit.setTitle(nil, for: .normal)
             
-
         }
         
 
@@ -83,6 +82,8 @@ class GameVC: UIViewController {
             if self.gameTime == 0 {
                 timer.invalidate()
                 print("time's up")
+                self.showTimesUpAlert()
+                self.player.pause()
             }
         }
         
@@ -97,8 +98,6 @@ class GameVC: UIViewController {
                     self.pokemonButtonOutlet[i].setImage(nil, for: .normal)
                     self.pokemonButtonOutlet[i].isEnabled = false
                 }
-                
-                
                 
                 print("stop showing pokemon. Your total score is \(self.totalScroe)")
             }
@@ -165,11 +164,20 @@ class GameVC: UIViewController {
         
     }
     
+    func showTimesUpAlert(){
+        let alert = UIAlertController(title: "TIME'S UP!", message: "Your score is  \(totalScroe)", preferredStyle: .alert)
+        let seeResultAction = UIAlertAction(title: "See Result", style: .default) { (alertAction) in
+            self.performSegue(withIdentifier: "gameToLeaderboardSG", sender: self)
+        }
+        
+        alert.addAction(seeResultAction)
+        present(alert, animated: true, completion: nil )
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
 
     }
