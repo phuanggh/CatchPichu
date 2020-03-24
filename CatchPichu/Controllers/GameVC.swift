@@ -18,9 +18,9 @@ class GameVC: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     
-    let pichuArray = Array(repeating: "pichu", count: 6)
-    let pikachuArray = Array(repeating: "pikachu", count: 2)
-    let raichuArray = Array(repeating: "raichu", count: 1)
+    let pichuArray = Array(repeating: Pokemon.pichu, count: 6)
+    let pikachuArray = Array(repeating: Pokemon.pikachu, count: 2)
+    let raichuArray = Array(repeating: Pokemon.raichu, count: 1)
     var gameTime = 35
     
     var pichuNum = 0
@@ -50,14 +50,14 @@ class GameVC: UIViewController {
 
             // Set the score
             switch pokemonHit.titleLabel?.text {
-            case "pikachu":
-                totalScroe += 3
+            case Pokemon.pikachu.name:
+                totalScroe += Pokemon.pikachu.score
                 pikachuNum += 1
-            case "raichu":
-                totalScroe += 5
+            case Pokemon.raichu.name:
+                totalScroe += Pokemon.raichu.score
                 raichuNum += 1
             default:
-                totalScroe += 1
+                totalScroe += Pokemon.pichu.score
                 pichuNum += 1
             }
             
@@ -113,7 +113,7 @@ class GameVC: UIViewController {
         }
     }
     
-    //顯示pokemon的圖片
+    // Show pokemon image
     @objc func showPokemon(){
         
         //button: 找出所有空的button
@@ -139,20 +139,20 @@ class GameVC: UIViewController {
                 let randomPokemon = pokemonArray.randomElement()
                 
                 // set the random pokemon image
-                emptyButtonArray[i].setImage(UIImage(named: "\(randomPokemon ?? "pichu")"), for: .normal)
+                emptyButtonArray[i].setImage(UIImage(named: "\(randomPokemon?.name ?? "pichu")"), for: .normal)
                 
                 // set the random pokemon title
-                emptyButtonArray[i].setTitle(randomPokemon ?? "pichu", for: .normal)
+                emptyButtonArray[i].setTitle(randomPokemon?.name ?? "pichu", for: .normal)
 
                 //每種pokemon出現的時間
                 var pokemonAppearTime: Float = 3.0
                 switch randomPokemon {
-                case "pikachu":
-                    pokemonAppearTime = Float.random(in: 1.5 ... 2.5)
-                case "raichu":
-                    pokemonAppearTime = 1
+                case Pokemon.pikachu:
+                    pokemonAppearTime = Pokemon.pikachu.appearTime
+                case Pokemon.raichu:
+                    pokemonAppearTime = Pokemon.raichu.appearTime
                 default:
-                    pokemonAppearTime = Float.random(in: 2...4)
+                    pokemonAppearTime = Pokemon.pichu.appearTime
                 }
                 
                 //只讓該次出現的pokemon消失
