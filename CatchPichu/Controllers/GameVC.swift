@@ -21,7 +21,7 @@ class GameVC: UIViewController {
     let pichuArray = Array(repeating: "pichu", count: 6)
     let pikachuArray = Array(repeating: "pikachu", count: 2)
     let raichuArray = Array(repeating: "raichu", count: 1)
-    var gameTime = 10
+    var gameTime = 35
     
     var pichuNum = 0
     var pikachuNum = 0
@@ -86,19 +86,18 @@ class GameVC: UIViewController {
     func gameStart() {
         
         // Timer: game countdown
-        Timer.scheduledTimer(withTimeInterval: Double.random(in: 0.7...1.5), repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             self.gameTime -= 1
             self.gameTimeLabel.text = String(self.gameTime)
             if self.gameTime == 0 {
                 timer.invalidate()
-                print("time's up")
                 self.showTimesUpAlert()
                 self.player.pause()
             }
         }
         
         // Timer: showing pokemon until time's up
-        Timer.scheduledTimer(withTimeInterval: 1.2, repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: Double.random(in: 0.7...1.4), repeats: true) { (timer) in
             self.showPokemon()
             if self.gameTime == 0 {
                 timer.invalidate()
@@ -108,8 +107,7 @@ class GameVC: UIViewController {
                     self.pokemonButtonOutlet[i].setImage(nil, for: .normal)
                     self.pokemonButtonOutlet[i].isEnabled = false
                 }
-                
-                print("stop showing pokemon. Your total score is \(self.totalScroe)")
+
             }
             
         }
@@ -145,7 +143,6 @@ class GameVC: UIViewController {
                 
                 // set the random pokemon title
                 emptyButtonArray[i].setTitle(randomPokemon ?? "pichu", for: .normal)
-//                print(emptyButtonArray[i].titleLabel?.text ?? "cannot get button title")
 
                 //每種pokemon出現的時間
                 var pokemonAppearTime: Float = 3.0
@@ -234,7 +231,7 @@ class GameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        gameTimeLabel.text = String(gameTime)
 
     }
 
