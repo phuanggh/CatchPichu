@@ -48,7 +48,7 @@ class GameVC: UIViewController {
         
         if pokemonHit.currentImage != nil {
 
-            // Set the score
+            // Set the score of each pokemon
             switch pokemonHit.titleLabel?.text {
             case Pokemon.pikachu.name:
                 totalScroe += Pokemon.pikachu.score
@@ -82,7 +82,7 @@ class GameVC: UIViewController {
     
     
     
-    //使用者start遊戲後的動作，每1.5秒show pokemon
+    // The actions when game starts
     func gameStart() {
         
         // Timer: game countdown
@@ -97,7 +97,7 @@ class GameVC: UIViewController {
         }
         
         // Timer: showing pokemon until time's up
-        Timer.scheduledTimer(withTimeInterval: Double.random(in: 0.7...1.4), repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: Double.random(in: 0.5...1.4), repeats: true) { (timer) in
             self.showPokemon()
             if self.gameTime == 0 {
                 timer.invalidate()
@@ -116,7 +116,7 @@ class GameVC: UIViewController {
     // Show pokemon image
     @objc func showPokemon(){
         
-        //button: 找出所有空的button
+        //button: find all the empty button
         var emptyButtonArray = [UIButton]()
         for i in 1...pokemonButtonOutlet.count {
             if pokemonButtonOutlet[i - 1].currentImage == nil {
@@ -124,27 +124,27 @@ class GameVC: UIViewController {
             }
         }
         
-        //所有的pokemon array
+        // Generate weighted random pokemon
         let pokemonArray = pichuArray + pikachuArray + raichuArray
 
-        //每次有幾個imageView要出現pokemon
+        // random number of pokemon to appear
         let numberToAdd = Int.random(in: 1...3)
         
-        //button: 空的button要隨機出現pokemon
-        if emptyButtonArray.count > 7 {
+        //button: random empty button to show pokemon
+        if emptyButtonArray.count > 6 {
             emptyButtonArray.shuffle()
             for i in 0..<numberToAdd {
                 
-                //每次隨機出現的pokemon
+                // Generate random pokemon to show
                 let randomPokemon = pokemonArray.randomElement()
                 
-                // set the random pokemon image
+                // Set the random pokemon image
                 emptyButtonArray[i].setImage(UIImage(named: "\(randomPokemon?.name ?? "pichu")"), for: .normal)
                 
-                // set the random pokemon title
+                // Set the random pokemon title
                 emptyButtonArray[i].setTitle(randomPokemon?.name ?? "pichu", for: .normal)
 
-                //每種pokemon出現的時間
+                // Appear time of each type of pokemon
                 var pokemonAppearTime: Float = 3.0
                 switch randomPokemon {
                 case Pokemon.pikachu:
@@ -155,7 +155,7 @@ class GameVC: UIViewController {
                     pokemonAppearTime = Pokemon.pichu.appearTime
                 }
                 
-                //只讓該次出現的pokemon消失
+                // Timer: count down each pokemon's appear time
                 Timer.scheduledTimer(withTimeInterval: TimeInterval(pokemonAppearTime), repeats: false) { (timer) in
                     
                     // let the pokemon image disappear
