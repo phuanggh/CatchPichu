@@ -97,7 +97,7 @@ class GameVC: UIViewController {
         }
         
         // Timer: showing pokemon until time's up
-        Timer.scheduledTimer(withTimeInterval: Double.random(in: 0.5...1.4), repeats: true) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: Double.random(in: 0.5...1.5), repeats: true) { (timer) in
             self.showPokemon()
             if self.gameTime == 0 {
                 timer.invalidate()
