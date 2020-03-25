@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pic_CatchPichu" translatesAutoresizingMaskIntoConstraints="NO" id="9XL-kt-R5c">
-                                <rect key="frame" x="-25" y="416" width="661" height="480"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pic_CatchPichu2" translatesAutoresizingMaskIntoConstraints="NO" id="9XL-kt-R5c">
+                                <rect key="frame" x="0.0" y="419" width="414" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-FI-1Fs">
@@ -481,7 +481,7 @@
     </scenes>
     <resources>
         <image name="LeaderboardBackground" width="1713" height="3113"/>
-        <image name="Pic_CatchPichu" width="1920" height="1362"/>
+        <image name="Pic_CatchPichu2" width="1192" height="1362"/>
         <image name="RiceField" width="1187" height="1236"/>
         <image name="WoodButton" width="367" height="155"/>
         <image name="WoodSign2" width="379" height="656"/>
@@ -490,6 +490,6 @@
         <image name="ground_hole" width="7721" height="2850"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p4y-YN-Ud3"/>
+        <segue reference="N69-0B-EhZ"/>
     </inferredMetricsTieBreakers>
 </document>

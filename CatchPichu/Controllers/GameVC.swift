@@ -19,7 +19,7 @@ class GameVC: UIViewController {
     
     
     let pichuArray = Array(repeating: Pokemon.pichu, count: 6)
-    let pikachuArray = Array(repeating: Pokemon.pikachu, count: 2)
+    let pikachuArray = Array(repeating: Pokemon.pikachu, count: 3)
     let raichuArray = Array(repeating: Pokemon.raichu, count: 1)
     var gameTime = 35
     

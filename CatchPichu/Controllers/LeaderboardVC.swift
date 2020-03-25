@@ -36,10 +36,10 @@ class LeaderboardVC: UIViewController {
     func displayRank(){
         let scoreArray = defaults.array(forKey: "ScoreArray") as! [Int]
         rankLabel[0].text = "1st \(scoreArray[0])"
-        rankLabel[1].text = "1st \(scoreArray[1])"
-        rankLabel[2].text = "1st \(scoreArray[2])"
-        rankLabel[3].text = "1st \(scoreArray[3])"
-        rankLabel[4].text = "1st \(scoreArray[4])"
+        rankLabel[1].text = "2st \(scoreArray[1])"
+        rankLabel[2].text = "3st \(scoreArray[2])"
+        rankLabel[3].text = "4st \(scoreArray[3])"
+        rankLabel[4].text = "5st \(scoreArray[4])"
         
     }
     
