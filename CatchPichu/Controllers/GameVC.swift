@@ -31,8 +31,6 @@ class GameVC: UIViewController {
     let player = AVPlayer()
     
     let defaults = UserDefaults.standard
-    var initialScoreArray = [0, 0, 0, 0, 0,]
-
     
     
     @IBAction func StartButtonPressed(_ sender: UIButton) {
@@ -212,19 +210,10 @@ class GameVC: UIViewController {
         
         } else {
             // Build a UserDefault if user plays for the first time
-            for i in 0 ..< 5 {
-                
-                if comparedScore >= initialScoreArray[i] {
-                    temp = initialScoreArray[i]
-                    initialScoreArray[i] = comparedScore
-                    comparedScore = temp
-                }
-            }
-            defaults.set(initialScoreArray, forKey: "ScoreArray")
+            let scoreArray = [comparedScore, 0, 0, 0, 0]
+            defaults.set(scoreArray, forKey: "ScoreArray")
             
         }
-        
-
         
     }
     
