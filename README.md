@@ -1,4 +1,8 @@
 # Catch Pichu
+Catch Pichu is a whack a mole game. 3 types of Pokemon, Pichu, Pikachu, and Raichu, show randomly with different probability, scores and showing time. The aim of this game is to score as much as possible.
+<br>
+The game results and rank are stored internally in the app.
+
 ### Medium Articles
 For more details about this app, please see Medium articles:
 <br>
